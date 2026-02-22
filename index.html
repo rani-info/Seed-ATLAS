@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seed Atlas | Reseed & Agrobiodiversity</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="wrap">
+      <div class="brand">
+        <div class="logo">🌾</div>
+        <div>
+          <h1>Seed Atlas</h1>
+          <p class="sub">ISK • In-situ conservation • Incentives • Agrobiodiversity</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#registry">Seed Registry</a>
+        <a href="#conservation">In-situ</a>
+        <a href="#incentives">Incentives</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="hero">
+        <h2>Document, protect, and support indigenous seed diversity.</h2>
+        <p>
+          A simple static prototype to showcase what we collect and why it matters.
+          No logins, no databases, no “systems” yet.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#registry">Explore registry</a>
+          <a class="btn ghost" href="#contact">Collaborate</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="about" class="card">
+      <h3>What this is</h3>
+      <p>
+        This page is a lightweight demo for a future seed platform focused on indigenous seeds,
+        in-situ conservation, and incentive mechanisms that keep agrobiodiversity alive in real fields.
+      </p>
+
+      <div class="grid-3">
+        <div class="tile">
+          <h4>Indigenous seeds</h4>
+          <p>Local names, traits, origin stories, and community knowledge (with consent).</p>
+        </div>
+        <div class="tile">
+          <h4>In-situ conservation</h4>
+          <p>Tracking cultivation status, threats, and farmer-led conservation practices.</p>
+        </div>
+        <div class="tile">
+          <h4>Incentives</h4>
+          <p>Identifying what support actually helps: markets, recognition, inputs, insurance, etc.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="registry" class="card">
+      <div class="row">
+        <h3>Seed Registry (demo)</h3>
+        <input id="search" class="search" placeholder="Search by name, crop, region, traits…" />
+      </div>
+
+      <div class="filters">
+        <label>
+          Crop
+          <select id="cropFilter">
+            <option value="all">All</option>
+            <option value="Rice">Rice</option>
+            <option value="Millet">Millet</option>
+            <option value="Wheat">Wheat</option>
+            <option value="Pulses">Pulses</option>
+          </select>
+        </label>
+
+        <label>
+          In-situ status
+          <select id="statusFilter">
+            <option value="all">All</option>
+            <option value="Actively cultivated">Actively cultivated</option>
+            <option value="Home garden">Home garden</option>
+            <option value="Community seed bank">Community seed bank</option>
+            <option value="At risk">At risk</option>
+          </select>
+        </label>
+
+        <label>
+          Sharing
+          <select id="sharingFilter">
+            <option value="all">All</option>
+            <option value="Public">Public</option>
+            <option value="Research-only">Research-only</option>
+            <option value="Restricted">Restricted</option>
+          </select>
+        </label>
+      </div>
+
+      <div id="cards" class="cards"></div>
+
+      <p class="note">
+        Note: This is static demo data for now. 
+      </p>
+    </section>
+
+    <section id="conservation" class="card">
+      <h3>In-situ conservation: what we track</h3>
+      <ul class="list">
+        <li><b>Current cultivation status:</b> active, occasional, discontinued</li>
+        <li><b>Farming system:</b> rainfed/irrigated/terrace/forest garden</li>
+        <li><b>Threats:</b> market pressure, climate stress, seed replacement, loss of knowledge</li>
+        <li><b>Seed practices:</b> saving, storage methods, exchange networks</li>
+        <li><b>Verification:</b> self-reported vs observed vs lab-tested</li>
+      </ul>
+    </section>
+
+    <section id="incentives" class="card">
+      <h3>Incentives: what actually helps</h3>
+      <div class="grid-2">
+        <div class="tile">
+          <h4>Market-based</h4>
+          <p>Premium pricing, buy-back guarantees, local procurement, branding support.</p>
+        </div>
+        <div class="tile">
+          <h4>Non-market</h4>
+          <p>Recognition, community seed banks, input support, training, insurance.</p>
+        </div>
+        <div class="tile">
+          <h4>Governance</h4>
+          <p>Benefit-sharing pathways, consent management, safe data sharing.</p>
+        </div>
+        <div class="tile">
+          <h4>Equity lens</h4>
+          <p>Who benefits? Women seed-keepers, indigenous communities, smallholders.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h3>Contact</h3>
+      <p>
+        This is an early prototype for a seed and agrobiodiversity registry. If you are a farmer group, seed network, 
+        NGO, researcher, or policymaker interested in collaborating (data collection, consent design, incentives, or pilots), please reach out.
+      </p>
+      <div class="contact-box">
+        <div><b>Owner:</b> Reseed Team </div>
+      </div><b>E-mail:</b> reseed@hanken.fi </div>
+        <div><b>Project:</b> Blockchain for Agrobiodiversity (Reseed prototype)</div>
+        <div class="hint"> Hanken School of Economics (Helsinki) </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Seed Atlas (static prototype).</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
