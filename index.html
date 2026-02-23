@@ -25,12 +25,11 @@
         <a href="#contact">Contact</a>
       </nav>
 
-      
       <div class="hero hero-img">
-        <h2>Document, protect, and support indigenous seed diversity.</h2>
+        <h2>ReSeed: Reviving biodiversity through farmer seed innovations.</h2>
         <p>
-          A simple static prototype to showcase what we collect and why it matters.
-          No logins, no databases, no “systems” yet.
+          ReSeed explores how responsible digital infrastructure can support farmers as custodians of agrobiodiversity,
+          by connecting seed exchange, consent-aware data sharing, traceability, and incentives that reward conservation and collaboration.
         </p>
         <div class="hero-actions">
           <a class="btn" href="#registry">Explore registry</a>
@@ -41,50 +40,44 @@
   </header>
 
   <main class="wrap">
+
+    <!-- ABOUT -->
     <section id="about" class="card">
-      <h3>What this is</h3>
+      <h3>Overview</h3>
       <p>
-        This page is a lightweight demo for a future seed platform focused on indigenous seeds,
-        in-situ conservation, and incentive mechanisms that keep agrobiodiversity alive in real fields.
+        ReSeed (Blockchain4Biodiversity) develops a technical specification for a digital farmers’ market
+        that enables equitable and traceable exchange of farmers’ indigenous seeds and associated know-how (ISK),
+        and incentivizes downstream users to report back research and innovations linked to those materials.
       </p>
 
-      
-      <div class="tile tile-with-img">
-      <img src="images/seeds.png" alt="Seeds" />
-      <h4>Indigenous seeds</h4>
-      <p>Local names, traits, origin stories, and community knowledge (with consent).</p>
+      <div class="feature-grid feature-grid--media">
+        <article class="feature-card">
+          <img src="images/seeds.png" alt="Indigenous seeds" />
+          <h4>Indigenous seeds & ISK</h4>
+          <p>Document local seed diversity and associated know-how with clear consent and sharing rules.</p>
+          <a class="mini-link" href="#registry">Explore registry →</a>
+        </article>
+
+        <article class="feature-card">
+          <img src="images/agro.png" alt="In-situ conservation" />
+          <h4>In-situ conservation</h4>
+          <p>Track cultivation status, threats, and farmer-led practices that keep diversity alive on-farm.</p>
+          <a class="mini-link" href="#conservation">What we track →</a>
+        </article>
+
+        <article class="feature-card">
+          <img src="images/incentives.png" alt="Incentives" />
+          <h4>Incentives</h4>
+          <p>Explore monetary and non-monetary incentives that support conservation and honest reporting-back.</p>
+          <a class="mini-link" href="#incentives">Incentive ideas →</a>
+        </article>
       </div>
+    </section> <!--  CLOSE ABOUT -->
 
-      <div class="tile tile-with-img">
-      <img src="images/agro.png" alt="In-situ conservation" />
-      <h4>In-situ conservation</h4>
-      <p>Tracking cultivation status, threats, and farmer-led conservation practices.</p>
-      </div>
-
-<div class="tile tile-with-img">
-  <img src="images/incentives.png" alt="Incentives" />
-  <h4>Incentives</h4>
-  <p>Identifying what support actually helps: markets, recognition, inputs, insurance, etc.</p>
-</div>
-
-<section class="card">
-  <div class="two-col">
-    <div>
-      <h3>Incentives and traceability (concept)</h3>
-      <p>
-        Explore how incentive mechanisms (monetary and non-monetary) can support in-situ conservation,
-        with transparent reporting and responsible data sharing.
-      </p>
-    </div>
-    <img class="side-img" src="images/biocoin.png" alt="Biocoin concept" />
-  </div>
-</section>
-
-
-
+    <!-- REGISTRY -->
     <section id="registry" class="card">
       <div class="row">
-        <h3>Seed Registry (demo)</h3>
+        <h3>Seed Registry</h3>
         <input id="search" class="search" placeholder="Search by name, crop, region, traits…" />
       </div>
 
@@ -96,7 +89,7 @@
             <option value="Rice">Rice</option>
             <option value="Millet">Millet</option>
             <option value="Wheat">Wheat</option>
-            <option value="Pulses">Pulses</option>
+            <option value="Maize">Maize</option>
           </select>
         </label>
 
@@ -123,14 +116,11 @@
       </div>
 
       <div id="cards" class="cards"></div>
-
-      <p class="note">
-        Note: This is static demo data for now. 
-      </p>
     </section>
 
+    <!-- CONSERVATION -->
     <section id="conservation" class="card">
-      <h3>In-situ conservation: what we track</h3>
+      <h3>Field indicators for in-situ conservation</h3>
       <ul class="list">
         <li><b>Current cultivation status:</b> active, occasional, discontinued</li>
         <li><b>Farming system:</b> rainfed/irrigated/terrace/forest garden</li>
@@ -140,8 +130,9 @@
       </ul>
     </section>
 
+    <!-- INCENTIVES -->
     <section id="incentives" class="card">
-      <h3>Incentives: what actually helps</h3>
+      <h3>Practical incentive mechanisms</h3>
       <div class="grid-2">
         <div class="tile">
           <h4>Market-based</h4>
@@ -162,23 +153,55 @@
       </div>
     </section>
 
+    <!-- HIGHLIGHT -->
+    <section class="highlight" id="ethics">
+      <div class="highlight-text">
+        <h3>Consent-first data sharing</h3>
+        <p>
+          Participation relies on clear consent, controlled sharing levels (public, research-only, restricted),
+          and safeguards for sensitive knowledge. Governance rules define rights, responsibilities, and dispute handling
+          to build trust across farmers, researchers, and market actors.
+        </p>
+        <a class="mini-link" href="#contact">Contribute to ethics & governance design →</a>
+      </div>
+      <img class="highlight-img" src="images/seed_consent.png" alt="Consent and governance" />
+    </section>
+
+    <!-- CONTACT -->
     <section id="contact" class="card">
       <h3>Contact</h3>
       <p>
-        This is an early prototype for a seed and agrobiodiversity registry. If you are a farmer group, seed network, 
-        NGO, researcher, or policymaker interested in collaborating (data collection, consent design, incentives, or pilots), please reach out.
+        For collaboration, feedback, or pilot participation related to indigenous seeds, in-situ conservation, consent workflows,
+        incentives, or responsible data sharing, please contact:
       </p>
-      <div class="contact-box">
-        <div><b>Owner:</b> Reseed Team </div>
-      </div><b>E-mail:</b> reseed@hanken.fi </div>
-        <div><b>Project:</b> Blockchain for Agrobiodiversity (Reseed prototype)</div>
-        <div class="hint"> Hanken School of Economics (Helsinki) </div>
+
+      <div class="contact-card">
+        <div class="contact-row">
+          <span class="label">Owner</span>
+          <span class="value">ReSeed Team</span>
+        </div>
+
+        <div class="contact-row">
+          <span class="label">Email</span>
+          <a class="value link" href="mailto:reseed@hanken.fi">reseed@hanken.fi</a>
+        </div>
+
+        <div class="contact-row">
+          <span class="label">Project</span>
+          <span class="value">Blockchain for Biodiversity (ReSeed)</span>
+        </div>
+
+        <div class="contact-row">
+          <span class="label">Affiliation</span>
+          <span class="value">Hanken School of Economics, Helsinki</span>
+        </div>
       </div>
-    </section>
+    </section> <!-- CLOSE CONTACT -->
 
     <footer class="footer">
-      <p>© <span id="year"></span> Seed Atlas (static prototype).</p>
+      <p>© <span id="year"></span> Seed Atlas.</p>
     </footer>
+
   </main>
 
   <script src="script.js"></script>
